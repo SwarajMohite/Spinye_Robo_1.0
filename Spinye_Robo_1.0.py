@@ -1,24 +1,26 @@
 # Spinye Robo 1.0 created by Swaraj Mohite
 
-# Required packages: pyttsx3, pyjokes, google_trans_new, SpeechRecognition
+# Required packages: pyttsx3, pyjokes, google_trans_new, SpeechRecognition, googletrans, translate, speech_recognition
 # Install using:
-# pip install pyttsx3 pyjokes google_trans_new SpeechRecognition
+# pip install pyttsx3 pyjokes google_trans_new SpeechRecognition googletrans translate speech_recognition
+# Install above Python Modules in your system to run the following code
 
+""" Importing downloaded Modules """
 import pyttsx3  # Module to speak the text
 import pyjokes  # To generate Random Jokes
-from google_trans_new import google_translator # Module to Translate New.
+from google_trans_new import google_translator # New Module to Translate.
 from translate import Translator # To translate
 import googletrans # Module to Translate
-import speech_recognition as SR # Module for Speech functionality
+import speech_recognition as SR # Module for Speech functionality , We imported it as SR for Simplicity
 
 def intro(user_name):
     """
     Introduction of Spinye to the user. About its usage.
     """
     intro_message = f'''
-    Hello {user_name}! You can interact with me by typing commands or speaking to me.
-    You can ask me to do various things like translate or tell jokes.
-    You can find out what I can do at any time by typing 'help'.
+    Hello {user_name}! You can interact with me by typing commands eg. vtrans, trans etc. .
+    I can to do various things like translate or tell jokes.
+    You can find out, what I can do by typing 'help' at anytime.
     Let's get started!
     '''
     print(intro_message)
